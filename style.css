@@ -1,0 +1,230 @@
+:root {
+  --Lightred: hsla(0, 100%, 67%, 0.1);
+  --Orangeyyellow: hsla(39, 100%, 56%, 0.1);
+  --Greenteal: hsla(166, 100%, 37%, 0.1);
+  --Cobaltblue: hsla(234, 85%, 45%, 0.1);
+
+  /*background*/
+  --Lightslateblue: hsl(252, 100%, 67%);
+  --Lightroyalblue: hsl(241, 81%, 54%);
+
+  /*circle*/
+  --Violetblue: hsla(256, 72%, 46%, 1);
+  --Persianblue: hsla(241, 72%, 46%, 0);
+
+  --White: hsl(0, 0%, 100%);
+  --Paleblue: hsl(221, 100%, 96%);
+  --Lightlavender: hsl(241, 100%, 89%);
+  --Darkgrayblue: hsl(224, 30%, 27%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: white;
+}
+
+/*Main*/
+section {
+  margin-top: 8%;
+}
+
+/*Inner div 1*/
+#inner-div-1 {
+  position: relative;
+  z-index: 1;
+  margin-left: 30%;
+  margin-right: auto;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  width: 20%;
+  height: 400px;
+  text-align: center;
+  border-radius: 15px;
+  padding-top: 10px;
+}
+#inner-div-1 p:first-child {
+  color: var(--Lightlavender);
+  margin-top: 1.8rem;
+  font-weight: 700;
+}
+#circle {
+  display: inline-block;
+  padding: 2rem;
+  color: var(--White);
+  margin-top: 2rem;
+  width: 9rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+#circle h1 {
+  font-size: 3rem;
+}
+#circle #oftxt {
+  margin-bottom: 100px;
+  display: inline;
+  font-size: 0.9rem;
+}
+h2 {
+  margin-top: 1rem;
+  color: var(--White);
+}
+#inner-div-1 p:last-child {
+  margin-top: 1.2rem;
+  display: inline-block;
+  width: 80%;
+  color: var(--Lightlavender);
+}
+/*Inner div 2*/
+#inner-div-2 {
+  margin-left: auto;
+  margin-right: 28%;
+  margin-top: -25rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+
+  flex-direction: column;
+  box-shadow: 2px 2px 30px 5px hsla(0, 0%, 0%, 0.2);
+  background-color: var(--White);
+  width: 23%;
+  height: 400px;
+  padding-left: 45px;
+  padding-bottom: 15px;
+}
+#inner-div-2 p:first-child {
+  color: var(--Darkgrayblue);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 25px;
+}
+
+/*Reaction box*/
+#reaction-box {
+  border-radius: 8px;
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding: 10px;
+  margin-top: -15px;
+  margin-bottom: -25px;
+  background: var(--Lightred);
+}
+#word1 {
+  margin-left: 0px;
+  color: hsl(0, 100%, 67%);
+}
+.nums {
+  margin-left: 60px;
+  font-weight: 700;
+}
+.nums-set-2 {
+  color: var(--Darkgrayblue);
+}
+#whole-number-1 {
+  margin-left: -20px;
+}
+/*memory-box*/
+
+#memory-box {
+  border-radius: 8px;
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding: 10px;
+  background: var(--Orangeyyellow);
+  margin-bottom: -25px;
+}
+#word2 {
+  margin-left: 11px;
+  color: hsl(39, 100%, 56%);
+}
+#whole-number-2 {
+  margin-left: -15px;
+}
+/*verbal-box*/
+#verbal-box {
+  margin-bottom: -25px;
+
+  border-radius: 8px;
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding: 10px;
+  background: var(--Greenteal);
+}
+#word3 {
+  margin-left: 2px;
+  color: hsl(166, 100%, 37%);
+}
+/*visual-box*/
+#visual-box {
+  margin-bottom: -8px;
+
+  border-radius: 8px;
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding: 10px;
+  background: var(--Cobaltblue);
+}
+#word4 {
+  margin-left: 2px;
+  color: hsl(234, 85%, 45%);
+}
+/*Continue-btn*/
+#Continue-btn {
+  width: 90%;
+  padding: 12px 10px;
+  border-radius: 20px;
+  border: none;
+  color: var(--White);
+  background-color: var(--Darkgrayblue);
+}
+#Continue-btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+/*Footer*/
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 40%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*For mobile screens*/
+@media only screen and (max-width: 600px) {
+  #inner-div-1 {
+    width: 100%;
+    height: 400px;
+    margin-top: -2rem;
+    margin-left: -0.1rem;
+  }
+  #inner-div-2 {
+    margin-top: -1rem;
+    width: 100%;
+  }
+  footer {
+    width: 50%;
+    margin-bottom: -1rem;
+    margin-left: -4rem;
+  }
+}
